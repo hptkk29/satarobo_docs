@@ -1,0 +1,66 @@
+/**
+ * Sata Robo brand — cam #F97316, tím #7C3AED.
+ * Tuỳ biến token Infima của Docusaurus.
+ */
+
+:root {
+  --ifm-color-primary: #ea580c;
+  --ifm-color-primary-dark: #d24f0a;
+  --ifm-color-primary-darker: #c64b09;
+  --ifm-color-primary-darkest: #a33e08;
+  --ifm-color-primary-light: #f2670f;
+  --ifm-color-primary-lighter: #f97316;
+  --ifm-color-primary-lightest: #fb8a3c;
+
+  --sr-accent: #7c3aed;
+
+  --ifm-code-font-size: 92%;
+  --ifm-font-size-base: 16px;
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.12);
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #fb923c;
+  --ifm-color-primary-dark: #f97316;
+  --ifm-color-primary-darker: #ea580c;
+  --ifm-color-primary-darkest: #c2410c;
+  --ifm-color-primary-light: #fdba74;
+  --ifm-color-primary-lighter: #fed7aa;
+  --ifm-color-primary-lightest: #ffedd5;
+
+  --sr-accent: #a78bfa;
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.2);
+}
+
+/* Badge trạng thái dùng xuyên suốt tài liệu (✅/🟡/🧩/🔴/❓). */
+.sr-badge {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.sr-badge--wired { background: #dcfce7; color: #166534; }
+.sr-badge--partial { background: #fef9c3; color: #854d0e; }
+.sr-badge--schema { background: #ede9fe; color: #5b21b6; }
+.sr-badge--broken { background: #fee2e2; color: #991b1b; }
+.sr-badge--unknown { background: #e5e7eb; color: #374151; }
+
+[data-theme="dark"] .sr-badge--wired { background: #14532d; color: #bbf7d0; }
+[data-theme="dark"] .sr-badge--partial { background: #713f12; color: #fef08a; }
+[data-theme="dark"] .sr-badge--schema { background: #4c1d95; color: #ddd6fe; }
+[data-theme="dark"] .sr-badge--broken { background: #7f1d1d; color: #fecaca; }
+[data-theme="dark"] .sr-badge--unknown { background: #374151; color: #e5e7eb; }
+
+/* Sơ đồ mermaid căn giữa, có nền nhẹ cho dễ đọc. */
+.docusaurus-mermaid-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+}
